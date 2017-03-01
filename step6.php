@@ -28,12 +28,12 @@
   <div class="row">
     <nav class="col-sm-3">
 <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-    <li class="active"><a href="step1.php">Step1</a></li>
+    <li><a href="step1.php">Step1</a></li>
     <li><a href="step2.php">Step2</a></li>
     <li><a href="step3.php">Step3</a></li>
     <li><a href="step4.php">Step4</a></li>
-	<li><a href="#">Step5</a></li>
-	<li><a href="#">Step6</a></li>
+	<li><a href="step5.php">Step5</a></li>
+	<li class="active"><a href="step6.php">Step6</a></li>
 	<li><a href="#">Step7</a></li>
 	<li><a href="#">Step8</a></li>
 	<li><a href="#">Step9</a></li>
@@ -47,33 +47,35 @@
 </nav>
 
 <div class="col-sm-9">
- <form action="step1action.php" method="post">
-				<h1>NPP - Join Date</h1>
+ <form action="step5action.php" method="post">
+				<h1>Buku Tabungan : Bank - Atas Nama</h1>
 				<hr>
 					 <div class="well well-lg">
-				
+					
+				<div class="col-xs-6">
 			  		<?php
-					echo createInputField("text", "NIK", "NIK", "NIK", "", "col-xs-8", true, "Should not be Empty"); 
+					echo createInputField("text", "Bank", "Bank", "Bank", ""); 
 					?>
-
+				</div>
+				
+				<div class="col-xs-6">
 			  		<?php
-					echo createInputField("text", "Nama Lengkap", "Nama_Lengkap", "Nama_Lengkap", "", "col-xs-6", false, ""); 
+					echo createInputField("text", "Cabang", "Cabang", "Cabang", ""); 
 					?>
+				</div>
 				
+				 <div class="col-xs-6">
 					<?php
-					echo createInputField("text", "Jabatan", "Jabatan", "Jabatan", "", "col-xs-6", false, ""); 
+					echo createInputField("text", "Nomor Rekening", "No_Rekening", "No_Rekening", ""); 
 					?>
-
-					<?php
-					echo createInputField("text", "Departemen", "Departemen", "Departemen", "", "col-xs-6", false, ""); 
-					?>
-
-					<?php
-					echo createInputField("date", "Join Date", "Join_Date", "Join_Date", "", "col-xs-6", false, ""); 
-					?>
-
+					</div>
 				
-<br><br><br><br><br><br><br><br><br><br><br><br><br>				
+				<div class="col-xs-6">
+					<?php
+					echo createInputField("text", "Atas Nama", "Atas_Nama", "Atas_Nama", ""); 
+					?>
+					</div>
+	
 <center><button type="submit" class="btn btn-primary">Save</button>
 <button type="button" class="btn btn-primary">Reset</button></center>
 <hr>

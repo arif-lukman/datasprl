@@ -32,10 +32,9 @@
 
 <div class="container">
 <div class="well"><center><a class="left" href="step1.php" data-toggle="tooltip" title="You can create new data here">Create</a> </center></div>
-<div class="well"><center><a class="right" href="edit.php" data-toggle="tooltip" title="Modify some data">Edit</a></center></div>
+<div class="well"><center><a class="right" href="edit.php" data-toggle="tooltip" title="Search and Modify some data">Search and Edit</a></center></div>
 <div class="well"><center><a class="center" href="delete.php" data-toggle="tooltip" title="Delete data">Delete</a></center></div>
 <div class="well"><center><a class="center" href="view.php" data-toggle="tooltip" title="View and download here">View</a></center></div>
-<div class="well"><center><a class="center" href="search.php" data-toggle="tooltip" title="Search some data">Search</a></center></div>
 <div class="well"><center><a class="center" href="logout.php" data-toggle="tooltip" title="Done?Please logout">Logout</a></center></div>
 </div>	
 

@@ -91,7 +91,7 @@
 					<?php 'mysql_query'; ?>
 				</div>
 				
-<br><br><br><br><br><br><br><br><br><br><br><br><br>				
+				
 <center><button type="submit" class="btn btn-primary">Save</button>
 <button type="button" class="btn btn-primary">Reset</button></center>
 <hr>

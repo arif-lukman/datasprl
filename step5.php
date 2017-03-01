@@ -28,12 +28,12 @@
   <div class="row">
     <nav class="col-sm-3">
 <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-    <li class="active"><a href="step1.php">Step1</a></li>
+    <li><a href="step1.php">Step1</a></li>
     <li><a href="step2.php">Step2</a></li>
     <li><a href="step3.php">Step3</a></li>
     <li><a href="step4.php">Step4</a></li>
-	<li><a href="#">Step5</a></li>
-	<li><a href="#">Step6</a></li>
+	<li class="active"><a href="step5.php">Step5</a></li>
+	<li><a href="step6.php">Step6</a></li>
 	<li><a href="#">Step7</a></li>
 	<li><a href="#">Step8</a></li>
 	<li><a href="#">Step9</a></li>
@@ -47,31 +47,40 @@
 </nav>
 
 <div class="col-sm-9">
- <form action="step1action.php" method="post">
-				<h1>NPP - Join Date</h1>
+ <form action="step5action.php" method="post">
+				<h1>Nama Anggota Keluarga - Jamsostek</h1>
 				<hr>
 					 <div class="well well-lg">
 				
+				<div class="col-xs-6">
 			  		<?php
-					echo createInputField("text", "NIK", "NIK", "NIK", "", "col-xs-8", true, "Should not be Empty"); 
+					echo createInputField("text", "Nama Anggota Keluarga", "Nama_Anggota_Keluarga", "Nama_Anggota_Keluarga", ""); 
 					?>
-
-			  		<?php
-					echo createInputField("text", "Nama Lengkap", "Nama_Lengkap", "Nama_Lengkap", "", "col-xs-6", false, ""); 
-					?>
+				</div>
 				
-					<?php
-					echo createInputField("text", "Jabatan", "Jabatan", "Jabatan", "", "col-xs-6", false, ""); 
+				<div class="col-xs-6">
+			  		<?php
+					echo createInputField("text", "Nomor KK Anggota Keluarga", "No_KK_Keluarga", "No_KK_Keluarga", ""); 
 					?>
-
+				</div>
+				
+				 <div class="col-xs-6">
 					<?php
-					echo createInputField("text", "Departemen", "Departemen", "Departemen", "", "col-xs-6", false, ""); 
+					echo createInputField("text", "NIK Anggota Keluarga", "NIK_Keluarga", "NIK_Keluarga", ""); 
 					?>
-
+					</div>
+				
+				<div class="col-xs-6">
 					<?php
-					echo createInputField("date", "Join Date", "Join_Date", "Join_Date", "", "col-xs-6", false, ""); 
+					echo createInputField("text", "NPWP Anggota Keluarga", "NPWP_Keluarga", "NPWP_Keluarga", ""); 
 					?>
-
+					</div>
+	
+				<div class="col-xs-6">
+					<?php
+					echo createInputField("text", "Jamsostek Anggota Keluarga", "Jamsostek_Keluarga", "Jamsostek_Keluarga", ""); 
+					?>
+					</div>
 				
 <br><br><br><br><br><br><br><br><br><br><br><br><br>				
 <center><button type="submit" class="btn btn-primary">Save</button>

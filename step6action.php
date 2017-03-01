@@ -3,7 +3,7 @@
 	include "lib/library.php";
 
 	//ambil parameter
-	$NIK=$_POST["NIK"];
+	$NPP=$_POST["NPP"];
 	$Nama_Lengkap=$_POST["Nama_Lengkap"];
 	$Jabatan=$_POST["Jabatan"];
 	$Departemen=$_POST["Departemen"];
@@ -29,8 +29,8 @@
 
 	//kalau ada update, kalau ga ada insert
 	//if($count==0){
-		$sql = "INSERT INTO utama (NIK, Nama_Lengkap, Jabatan, Departemen, Join_Date)
-	VALUES ('$NIK', '$Nama_Lengkap', '$Jabatan', '$Departemen', '$Join_Date')";
+		$sql = "INSERT INTO utama (NPP, Nama_Lengkap, Jabatan, Departemen, Join_Date)
+	VALUES ('$NPP', '$Nama_Lengkap', '$Jabatan', '$Departemen', '$Join_Date')";
 	//}
 	//else{
 	//	$sql = "UPDATE utama SET NPP='$NPP', Nama_Lengkap='$Nama_Lengkap', Jabatan='$Jabatan', Departemen='$Departemen', Join_Date='$Join_Date' WHERE No='$No'";
